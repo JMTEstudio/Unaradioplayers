@@ -1,67 +1,76 @@
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/lunaradio-sincors.js"></script>
-
-<!--
-body {
-	background-color: #000000;
-}
--->
-
-</style>
-<div id="lunaradio" style='width:100%; height:80px;
--webkit-border-top-left-radius: 50px;
-  -webkit-border-top-right-radius: 50px;
-  -webkit-border-bottom-right-radius: 50px;
-  -webkit-border-bottom-left-radius: 50px;
-  -moz-border-radius-topleft: 50px;
-  -moz-border-radius-topright: 50px;
-  -moz-border-radius-bottomright: 50px;
-  -moz-border-radius-bottomleft: 50px;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
-  border-bottom-left-radius: 50px;
-  margin-top: -8px!important;
+<head>
+    <meta charset="UTF-8">
+    <title>Player UNA Radio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://unaradiord.000webhostapp.com/PLAYER2023/FAVICON.png"/>
+    
+</head>
+<body style="margin:0px">
+    <div id="lunaradio" style='width:100%; height:100%;background-image: url("fondo.jpg"); background-repeat: no-repeat; background-size: cover; background-position: center;
+-webkit-border-top-left-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
   border: none;'>
-<div style="overflow:hidden; height:0px; width:0px;"><a href="https://radioplayer.luna-universe.com" title="native html internet radio player plugin">PLAYER UNA RADIO</a> powered by <a href="https://www.unaradio.net" title="Streaming de Audio y Video">JMT Estudio</a>
-</div>
-</div>
-
-<script>
+        <div a href="PLAYER VISUAL" title="ZENO PRO">
+</a><a href="FRANCO" title="CREATIVO AGENCIA"></a>
+</div><script src="js/jquery-3.2.1.min.js" type="3bc5e4e5245e387f3290c38f-text/javascript"></script>
+<script src="js/lunaradio.min.js" type="3bc5e4e5245e387f3290c38f-text/javascript"></script>
+<div id="lunaradio" style="width:100%; height:550px;"></div>
+<script type="3bc5e4e5245e387f3290c38f-text/javascript">
+    
 $("#lunaradio").lunaradio({
-userinterface: "small", //big o small
-backgroundcolor: "#f6a134",
-fontcolor: "#ffffff",
-hightlightcolor: "#2a3060", 
-fontname: "bebas neue", 
-googlefont: "bebas neue", 
-fontratio: "0.6", 
-radioname: "UNA RADIO", //nombre de radio
-  scroll: "true",
-  coverimage: "img/UNA%20RADIO%20Logo%20DUOTONE.jpg", //link o ruta de logo radio
-  onlycoverimage: "false", //true para mostrar solo logo radio
-  coverstyle: "",
-  usevisualizer: "fake", //real o fake
-  visualizertype: "4",
-  metadatatechnic: "",
-  ownmetadataurl: "",
-  usestreamcorsproxy: "false", //true o false
-  corsproxy: "https://cors-anywhere.herokuapp.com/",
-  streamurl: "https://stream.zeno.fm/nasz1pwkga0uv",
-  streamtype: "radiozeno", //shoutcast2, icecast2, radiozeno, radionomy, radiojar, radioco
-  icecastmountpoint: "nasz1pwkga0uv",
-  shoutcastpath: "/stream",
-  shoutcastid: "1",
-  streamsuffix: "",
-  radionomyid: "",
-  radionomyapikey: "",
-  radiozenoid: "nasz1pwkga0uv",
-  radiojarid: "",
-  radiocoid: "",
-  itunestoken: "1000lIPN",
-  metadatainterval: "0500",
-  volume: "100",
-  autoplay: "false",
-  debug: "true",
-  });
+	
+	userinterface: "big",
+	backgroundcolor: "rgba(9,15,25,0.8)",
+	fontcolor: "#ffffff",
+	hightlightcolor: "#DC143C",
+	fontname: "Saira Condensed",
+	googlefont: "Saira+Condensed:wght@100",
+	fontratio: "0.7",
+	radioname: "UNA RADIO",
+	scroll: "true",
+	coverimage: "https://unaradiord.000webhostapp.com/PLAYER2023/nocover.jpg",
+	usevisualizer: "real",
+	coverstyle: "animated",
+	visualizertype: "3",
+	multicolorvisualizer: "true",
+    color1: "f6f6f6",
+    color2: "323edd",
+    color3: "fc5404",
+    color4: "#fa225b",
+	itunestoken: "1000lIPN",
+	metadatatechnic: "creativo-agencia-metadato",
+	ownmetadataurl: "https://zenoplay.zenomedia.com/api/zenofm/nowplaying/nasz1pwkga0uv",
+	streamurl: "https://stream.zeno.fm/nasz1pwkga0uv",
+	streamtype: "radiozeno",
+	icecastmountpoint: "/radio.mp3",
+	radionomyid: "",
+	radionomyapikey: "",
+	radiozenoid: "nasz1pwkga0uv",
+	radiojarid: "",
+	radiocoid: "",
+	shoutcastpath: "/stream",
+	shoutcastid: "1",
+	streamsuffix: "",
+	metadatainterval: "20000",
+	volume: "85",
+	debug: "false",
+	usestreamcorsproxy: "false", 
+	corsproxy: "https://corsradio.herokuapp.com/index.php?q=",
+	autoplay:"true",
+});
+
 </script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="3bc5e4e5245e387f3290c38f-|49" defer=""></script>
+
+
+</script>
+</body>
